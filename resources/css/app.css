@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@source "../views";
+@source "../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php";
+
+@plugin "@tailwindcss/forms";
+@theme {
+    --font-sans: 'Space Grotesk', ui-sans-serif, system-ui, sans-serif;
+    --font-mono: 'Space Mono', ui-monospace, monospace;
+}
+@layer base {
+	button {
+		cursor: pointer;
+	}
+}
